@@ -1,0 +1,51 @@
+* {
+    /*border: 1px solid black; */
+    padding: 0px;
+    margin: 0px;
+} 
+
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(138, 137, 137, 0.692);
+    height: 100vh;
+}
+.frame {
+    border: .5px solid black;
+    margin: auto;
+    width: 17%;
+    margin-top: 10%;
+    padding: 0px;
+    min-height: auto;
+    border-radius: 23px;
+    height: 600px;
+    z-index: 0;
+}
+
+.inner-screen {
+    min-height: auto;
+    height: 99%;
+    border-radius: 23px;
+    width: auto;
+    border: 4px solid rgba(126, 205, 224, 0.863);
+}
+
+.inner-screen-line{
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+#line4 {
+    border: 6px solid rgb(112, 210, 235); 
+}
+
+#line5 {
+    border: 3px solid black
+}
