@@ -1,51 +1,117 @@
-* {
-    /*border: 1px solid black; */
-    padding: 0px;
-    margin: 0px;
-} 
-
-html {
-    height: 100vh;
-}
 
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(138, 137, 137, 0.692);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    background-color: #f4f4f4;
 }
-.frame {
-    border: .5px solid black;
-    margin: auto;
-    width: 17%;
-    margin-top: 10%;
-    padding: 0px;
-    min-height: auto;
-    border-radius: 23px;
+
+.iphone {
+    width: 350px;
+    height: 700px;
+    background-color: #c2c2c2;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.notch {
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.screen {
+    width: 100%;
     height: 600px;
-    z-index: 0;
+    background-color: #000;
+    border-radius: 20px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
 }
 
-.inner-screen {
-    min-height: auto;
-    height: 99%;
-    border-radius: 23px;
-    width: auto;
-    border: 4px solid rgba(126, 205, 224, 0.863);
-}
-
-.inner-screen-line{
+.screen-content {
+    width: 100%;
     height: 100%;
-    border: 2px solid black;
-    border-radius: 18px;
-    margin: 0;
-    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: #3d3d3d;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#line4 {
-    border: 6px solid rgb(112, 210, 235); 
+.home-button {
+    width: 60px;
+    height: 60px;
+    background-color: #3d3d3d;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 30px);
+}
+@media (max-width: 768px) {
+    .iphone {
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .screen {
+        margin-top: 20px;
+    }
 }
 
-#line5 {
-    border: 3px solid black
+@media (max-width: 480px) {
+    .iphone {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .screen {
+        margin-top: 10px;
+    }
+
+    .home-button {
+        bottom: 10px;
+    }
+}
+
+#top-title {
+    margin: auto;
+    width: 50%;
+    color: white;
+    margin-top: 10%;
+}
+
+
+.return {
+    color: white;
+    margin: 30%;
+}
+
+#user-input {
+    margin: 20%;
+    width: 60%;
+}
+
+button {
+    display: flex;
+}
+
+
+#check-btn {
+    align-items: end;
 }
