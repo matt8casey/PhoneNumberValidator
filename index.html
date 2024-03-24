@@ -11,13 +11,19 @@
         <div class="notch"></div>
         <div class="screen">
             <div class="screen-content">
-                <h3 id="top-title">Is the number valid?</h1>
-                <input id="user-input" type="text" placeholder="Enter telephone number" />
-                <div id="result">
-                    <p class="return">Valid US number:  ${phoneNumber}</p>
+                <div id="form">
+                    <h3 id="top-title">Is the number valid?</h1>
+                    <input id="user-input" type="text" placeholder="Enter telephone number" />
+                    <div id="result">
+                        <p class="return" id="return1">Valid US number:  ${phoneNumber}</p>
+                        <p class="return" id="return2"></p>
+                        <p class="return" id="return3"></p>
+                    </div>
+                    <div id="btn">
+                        <button id="clear-btn">X</button>
+                        <button id="check-btn">✓</button>
+                    </div>
                 </div>
-                <button onclick="validatePhoneNumber()" id="check-btn">✓</button>
-                <button onclick="clearResults()" id="clear-btn">X</button>
             </div>
         </div>
         <div class="home-button"></div>
