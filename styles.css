@@ -60,33 +60,6 @@ body {
     bottom: 20px;
     left: calc(50% - 30px);
 }
-@media (max-width: 768px) {
-    .iphone {
-        width: 80%;
-        height: auto;
-        border-radius: 20px;
-    }
-
-    .screen {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .iphone {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .screen {
-        margin-top: 10px;
-    }
-
-    .home-button {
-        bottom: 10px;
-    }
-}
 
 #top-title {
     margin: auto;
@@ -97,14 +70,24 @@ body {
 }
 
 
-.return {
+#result {
     color: white;
-    margin: 30%;
+    display: inline-block;
+    width: fit-content;
+}
+
+.return{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.no-text {
+    margin: 20%;
 }
 
 #user-input {
     margin: 20%;
     width: 60%;
+    height: 20px;
 }
 
 #btn {
@@ -133,4 +116,62 @@ body {
 
 #form {
     margin: 3%;
+}
+
+@media (max-width: 768px) {
+    .iphone {
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .screen {
+        margin-top: 20px;
+    }
+
+    #btn {
+        display: flex;
+        justify-content: space-between;
+        margin: 5%;    
+    }
+    .no-text {
+        margin: 10%;
+    }
+
+    #user-input {
+        margin: 10%;
+        width: 80%;
+        height: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .iphone {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .screen {
+        margin-top: 10px;
+    }
+
+    .home-button {
+        bottom: 10px;
+    }
+
+    #btn {
+        display: flex;
+        justify-content: space-between;
+        margin: 5%;    
+    }
+    .no-text {
+        margin: 10%;
+    }
+
+    #user-input {
+        margin: 10%;
+        width: 60%;
+        height: 20px;
+    }
+
 }
